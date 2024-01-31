@@ -1,16 +1,22 @@
 import static org.junit.Assert.assertArrayEquals;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.Test;
 
 public class ListTests {
     
     @Test
     public void testFilter(){
-        // String [] testList = {"apple", "banana","peach"};
         List<String> newList = new ArrayList<>();
 
-        ListExamples.filter(testList, "peach");
-        assertArrayEquals();
+        newList.add("apple");
+        newList.add("banana");
+        newList.add("orange");
+
+        List<String> tester = ListExamples.filter(newList, "b");
+        assertArrayEquals(new String []{"banana"}, tester);
     }
 
     @Test 
