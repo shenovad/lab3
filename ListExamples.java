@@ -40,9 +40,22 @@ class ListExamples {
     }
     while(index2 < list2.size()) {
       result.add(list2.get(index2));
-      index1 += 1;
+      index2 += 1;
     }
     return result;
+  }
+
+
+  @Override
+  public boolean checkString(String s) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'checkString'");
+  }
+
+
+  public static void filter(String[] testList) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'filter'");
   }
 
 
